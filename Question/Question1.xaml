@@ -1,0 +1,49 @@
+﻿<Window x:Class="Question.Question1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Creating Question" Height="403" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"></RowDefinition>
+            <RowDefinition Height="29*"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+            <RowDefinition Height="37*"></RowDefinition>
+            <RowDefinition Height="38*"></RowDefinition>
+            <RowDefinition Height="37*"></RowDefinition>
+            <RowDefinition Height="38*"></RowDefinition>
+            <RowDefinition Height="37*"></RowDefinition>
+            <RowDefinition Height="38*"></RowDefinition>
+            <RowDefinition Height="37*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Label>Login</Label>
+            <TextBox Name="LoginTextBox"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Label>Password</Label>
+            <TextBox Name="PasswordTextBox"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <Label Visibility="Hidden" Name="ErrorL">ERROR!</Label>
+            <Button x:Name="LogInQBtn" Content="Log In" Click="LogInQBtn_Click"/>
+        </StackPanel>
+
+        <Label Grid.Row="1"  Grid.ColumnSpan="3">Question Title</Label>
+        <TextBox Grid.Row="2"  Grid.ColumnSpan="3" Name="titleTextB"></TextBox>
+        <Label Grid.Row="3"  Grid.ColumnSpan="3">First Answer</Label>
+        <TextBox Grid.Row="4"  Grid.ColumnSpan="3" Name="Ans1TextB"></TextBox>
+        <Label Grid.Row="5"  Grid.ColumnSpan="3">Second Answer</Label>
+        <TextBox Grid.Row="6" Grid.ColumnSpan="3" Name="Ans2TextB" ></TextBox>
+        <Label Grid.Row="7" Grid.ColumnSpan="3"  >Third Answer</Label>
+        <TextBox Grid.Row="8" Grid.ColumnSpan="3"  Name="Ans3TextB"></TextBox>
+        <Button Grid.Row="9" Visibility="Hidden" Name="CreatBtn" Click="CreatBtn_Click">Create</Button>
+    </Grid>
+
+</Window>
