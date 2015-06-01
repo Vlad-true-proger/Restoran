@@ -9,9 +9,9 @@ namespace Question.Repositories
 {
     public class UserReporitory
     {
-        private QuestionDataBaseEntities _context;
+        private RestaurantEntities _context;
 
-        public UserReporitory(QuestionDataBaseEntities context)
+        public UserReporitory(RestaurantEntities context)
         {
             _context = context;
         }
